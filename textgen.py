@@ -7,7 +7,6 @@ def loadFromFile(fn):
         list = [line.strip(' \t\n\r').split(",") for line in textFile]
     return list
 
-04845c71ef9b3ac8
 tech=loadFromFile("tech.txt")
 verb=loadFromFile("verbs.txt")
 issues=loadFromFile("issues.txt")
