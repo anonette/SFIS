@@ -1,0 +1,163 @@
+<html>
+<head>
+<style>
+body {
+    background-color: black;
+	color: white;
+}
+</style>
+<script type="text/javascript">
+
+//this function accepts an array and spits a value
+function choise(arr){
+  var rndd = Math.floor(Math.random()*arr.length);
+  return arr[rndd];
+}
+
+// replace the text of DIV
+function ReplaceContentInContainer(id,content) {
+	var container = document.getElementById(id);
+	container.innerHTML = content;
+}
+
+// shuffle our deck
+// see http://stackoverflow.com/a/18806417/184085
+var deck = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21];
+function shuffle(array) {
+    var i = array.length,
+        j = 0,
+        temp;
+
+    while (i--) {
+        j = Math.floor(Math.random() * (i+1));
+        // swap randomly chosen element with current element
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+
+function generateProphecy(rnd) {
+	var rndCard = shuffle(deck);
+	console.log(rndCard[0],rndCard[1],rndCard[2]);
+  	document.getElementById("gen-img1").src = "CBD_thumb/a"+pad(rndCard[0]+1)+".jpg";
+	document.getElementById("gen-img2").src = "CBD_thumb/a"+pad(rndCard[1]+1)+".jpg";
+	document.getElementById("gen-img3").src = "CBD_thumb/a"+pad(rndCard[2]+1)+".jpg";
+
+	var fortune = ""
+	fortune = fortune.concat(choise(tech[rndCard[0]]),' ',choise(verbs[rndCard[1]]),' ',choise(issues[rndCard[2]]) );
+	//console.log(fortune );
+	ReplaceContentInContainer("prophet",fortune )
+}
+
+// utility function to add zeros when needed
+function pad(number) {
+  if (number<=10) { number = ("0"+number).slice(-2); }
+  return number;
+}
+
+var tech = [
+    ["Citizen Science","DIY culture","makerspaces","hackerspaces"],
+    ["IoTs","Additive manufacturing","Digital fabrication","PC","mobile phones"],
+    ["Bioprinting","Tissue Engineering","Artificial meat","Regenerative medicine","cloning"],
+    ["Genetic engineering and gene editing"],
+    ["Nanotechnology","Biomicrorobotics","Biobanking"],
+    ["Synthetic Biology","Personalized Medicine"],
+    ["Personalized medicine","proteomics","microbiome research"],
+    ["Autonomous Vehicles","Drones"],
+    ["Big data","open data","open gov"],
+    ["Prosthesis","SENS rejuvenation"],
+    ["Cryptocurrency and blockchain"],
+    ["Wearable electronics","activity monitors","immune engineering"],
+    ["Neurotechnology TDCs","TMS","implants","Brain computer interfaces"],
+    ["Nanotechnologies"],
+    ["Microfluidics","Lab on a chip technologies","Organs on a Chip"],
+    ["Designer drugs","synthetic substances"],
+    ["Nuclear energy"],
+    ["Space travel","space exploration","Mission to Mars","search for habitable planets","reusable rockets"],
+    ["VR technology","Laser","LEDs","new Military technology (directed energy weapons)"],
+    ["Clean energy research","sustainable energy","Hydroelectric energy","solar energy","wind","geothermal","biomass"],
+    ["Large Hadron Collider","quantum computing","swarm robotics"],
+    ["World Wide Web","underwater cities","future cities"]
+];
+
+var verbs = [
+    ["wastes","squanders","desacrates "],
+    ["creates","inititates","develops"],
+    ["supports","stabilizes","aids","maintains","assists"],
+    ["challenges","changes"],
+    ["consolidates","enforces"],
+    ["restores","regulates"],
+    ["prioritizes","streamlines","oversees"],
+    ["envisions","encourages"],
+    ["reviews","weights","inspects"],
+    ["resonates on","isolates","stops"],
+    ["reorganizes","transforms"],
+    ["strengthens","selects","intervenes"],
+    ["delegates","weakens"],
+    ["terminates","destroys,annihilates"],
+    ["negotiates","balances"],
+    ["inflates","manipulates","escalates "],
+    ["questions","makes unclear","ruins"],
+    ["inspires","envisions","enlarges"],
+    ["controls","destroys","transforms"],
+    ["standardized","validates","supports"],
+    ["reveals","opens"],
+    ["improves","restores"]
+    ];
+var issues = [
+   ["Self-experimentation","LOLs"],
+    ["Cybersecurity","digital and scientific divides"],
+    ["Antibiotic resistance"],
+    ["Genetic modifications","Genetic patents"],
+    ["Nanotoxicity"],
+    ["Bioterrorism"],
+    ["Estrogen pollution & endocrine disruptors","BPA (Bisphenol A)","Robots & sex"],
+    ["Artificial Moral Agents"],
+    ["Foxxcon suicides (humans becoming obsolete)","Congo coltan wars (fair minerals)","robot and AI ethics","Dodd-Frank Wall Street Reform"],
+    ["Robots & seniors","assistive technologies","neurodegenerative diseases"],
+    ["Computer viruses","Cybersecurity"],
+    ["Human enhancement"],
+    ["Biopsychiatry controversy","vaccines debates","Pharma issues"],
+    ["Life extension","immortality","transhumanism","mind uploading","transhumanism","singularity"],
+    ["Science Wars","retractions","open science issues"],
+    ["Addictions"],
+    ["Global warming","Greenhouse effect"],
+    ["Extraterrestrial life","Terraforming","Mining Asteroids"],
+    ["Herbicides","pesticides","weapons of mass destruction"],
+    ["Sustainable energy"],
+    ["Transhumanism","Singularity"],
+    ["Surveillance & Data"]
+    ];
+
+
+</script>
+</head>
+<body>
+<div align="center" style="font-size:28px">
+SFIS (School for the Future of Innovation in Society) <Br>
+<div style="font-size:18px">Tarot deck for Anticipatory Governance of Emerging Technologies</div>
+</div>
+<br><br><br>
+<div align="center">
+<img id="gen-img1" onclick="generateProphecy()" src="CBD_thumb/cardback.jpg">
+<img id="gen-img2" onclick="generateProphecy()" src="CBD_thumb/cardback.jpg">
+<img id="gen-img3" onclick="generateProphecy()" src="CBD_thumb/cardback.jpg">
+</div>
+
+<div align="center">
+<div id="prophet" style="font-size:24px" >tell me something </div>
+
+<p><input type="button" value="what to anticipate" onclick="generateProphecy();" /></p>
+</div>
+<br><br><p>This ASU Oracle brings prophecies inspired by the original Tarot cards to provoke us to rethink 
+the implications of various emerging technologies and understand the value of anticipatory governance. 
+The algorithmic responses of this STS Pythia offer rich, at times funny and surprising socio-technical 
+scenarios, through which we can express the public expectations, but also fears and imagination about 
+the future. The SFIS Tarot can serve as a tool for a solemn meditation, but also as a forecasting tool 
+for brainstorming, public deliberation, scenario development or even as engagement exercise.
+<a href="https://docs.google.com/spreadsheets/d/11Ter3a38OXjwzwkWccF96ng3CFvFEx-bPBR__1IPh1Q/edit?usp=sharing" target="_blank">SFIS Tarot Deck (ongoing)</a><p>
+
+<div style="font-size:14px" >image credits: <a href="http://www.cbdtarot.com" target="_blank">CBD Tarot de Marseille</a> restored by Dr. Yoav Ben-Dov</body>
+</html>
