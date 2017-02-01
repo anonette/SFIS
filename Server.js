@@ -30,3 +30,13 @@ app.listen(3000,function(){
   console.log("Live at Port 3000");
 });
 
+function imgchange() {
+
+  var rnd = Math.floor(Math.random() * 21);
+    if (rnd == 0) {
+            rnd = 1;
+    }
+
+  document.getElementById("gen-img").src = sprintf("CBD_web/a%02d.jpg",rnd);
+
+}
