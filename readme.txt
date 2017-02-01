@@ -1,5 +1,5 @@
-#SFIS (School for the Future of Innovation in Society) 
-##Tarot deck for Anticipatory Governance of Emerging Technologies
+# SFIS (School for the Future of Innovation in Society) 
+## Tarot deck for Anticipatory Governance of Emerging Technologies
 
 This ASU Oracle brings prophecies inspired by the original Tarot cards to provoke us to rethink the 
 implications of various emerging technologies and understand the value of anticipatory governance. 
