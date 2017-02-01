@@ -7,10 +7,10 @@ The algorithmic responses of this STS Pythia offer rich, at times funny and surp
 scenarios, through which we can express the public expectations, but also fears and imagination 
 about the future. The SFIS Tarot can serve as a tool for a solemn meditation, but also as a forecasting 
 tool for brainstorming, public deliberation, scenario development or even as engagement exercise.
-SFIS Tarot Deck (ongoing)
+follow [SFIS Tarot Deck (ongoing)](https://docs.google.com/spreadsheets/d/11Ter3a38OXjwzwkWccF96ng3CFvFEx-bPBR__1IPh1Q/edit?usp=sharing)
 
-image credits: CBD Tarot de Marseille restored by Dr. Yoav Ben-Dov
+image credits: [CBD Tarot de Marseille](http://www.cbdtarot.com) restored by Dr. Yoav Ben-Dov
 
-posted on anonette.net/SFIS
+live at [anonette.net/SFIS](http://www.anonette.net/SFIS)
 
-cards from http://www.cbdtarot.com
+
