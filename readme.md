@@ -11,6 +11,6 @@ follow [SFIS Tarot Deck (ongoing)](https://docs.google.com/spreadsheets/d/11Ter3
 
 image credits: [CBD Tarot de Marseille](http://www.cbdtarot.com) restored by Dr. Yoav Ben-Dov
 
-live at [anonette.net/SFIS](http://www.anonette.net/SFIS)
+live at [anonette.net/SFIS](https://anonette.net/SFIS/)
 
 
